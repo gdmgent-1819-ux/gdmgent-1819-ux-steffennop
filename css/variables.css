@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap');
+
+:root{
+    --c-donkergrijs: #4D4D4D;
+    --c-bijnazwart: #1E1E1E;
+    --c-highlight: #BCCB73;
+    --c-highlighthover: #A6B55A;
+    --c-white: #FFFFFF;
+    --c-offwhite: #E0E0E0;
+}

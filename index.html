@@ -1,12 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eindopdracht UX</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Château Vallon-Pont-d'Arc</title>
 </head>
+
 <body>
+
+    <div id="myNav" class="overlay-menu">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content">
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="#" onclick="closeNav()">Reserve</a>
+            <a href="#rooms" onclick="closeNav()">Rooms & Suites</a>
+            <a href="#facilities" onclick="closeNav()">Facilities & Activities</a>
+            <a href="#restaurant" onclick="closeNav()">Restaurant</a>
+            <a href="#photos" onclick="closeNav()">Photo's</a>
+            <a href="#" onclick="closeNav()">About us</a>
+        </div>
+      
+    </div>
+
+    <header class="header d-flex align-items-center position-fixed">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col" onclick="openNav()">
+                    <div class="nav-icon d-flex align-items-center">
+                        <span class="flex-grow-1"></span>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <h1 class="d-fle align-items-center justify-content-center">
+                        <a href="#" class="logo d-block"><img src="images/logo.svg" alt="" class="d-block"></a>
+                    </h1>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <a href="#" class="phone-number d-inline-block"><i class="fas fa-phone"></i> <span><i>Tel:</i> +33 5 34 43 62 97</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="banner" data-parallax="scroll" data-image-src="images/banner.jpg">
+        <div class="reservation">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-12 col-sm-12 column">
+                        <h5>reserve</h5>
+                    </div>
+                    <div class="col-lg-7 col-md-9 col-sm-12 column">
+                        <div class="form-fields d-flex align-items-center">
+                            <span class="d-block flex-grow-1 datepicker-wrap"><i class="far fa-calendar-alt"></i><input
+                                    name="" type="text" class="form-control datepicker" placeholder="Arrival"></span>
+                            <span class="d-block flex-grow-1 datepicker-wrap"><i class="far fa-calendar-alt"></i><input
+                                    name="" type="text" class="form-control datepicker" placeholder="Departure"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-12 column">
+                        <a href="#" class="btn text-uppercase btn-block">Book</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a name="rooms"></a>
+    <main class="contents">
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h4>Rooms &amp; Suites</h4>
+                </div>
+
+                <div class="product-sliders position-relative room-slider-wrap">
+                    <div class="slider-arrow prev d-flex align-items-center justify-content-center"><i
+                            class="far fa-angle-left"></i></div>
+                    <div class="slider-arrow next d-flex align-items-center justify-content-center"><i
+                            class="far fa-angle-right"></i></div>
+                    <div class="row product-slider room-slider">
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Family suite</h6>
+                                        <p>perfect for the whole family</p>
+                                    </div>
+                                </div>
+                                <img src="images/rooms/1.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Double room</h6>
+                                        <p>double bed for 2 people</p>
+                                    </div>
+                                </div>
+                                <img src="images/rooms/2.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Triple room</h6>
+                                        <p>1 double bed & 1 single bed</p>
+                                    </div>
+                                </div>
+                                <img src="images/rooms/3.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>King size</h6>
+                                        <p>king size bed</p>
+                                    </div>
+                                </div>
+                                <img src="images/rooms/4.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Honeymoon suite</h6>
+                                        <p>for the freshly wed</p>
+                                    </div>
+                                </div>
+                                <img src="images/rooms/5.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <a name="location"></a>
+
+        <section class="section location">
+
+            <div class="section-heading text-center">
+                <h4>Location</h4>
+            </div>
+
+            <div class="section-content-block dark-gray-bg-color">
+                <div class="container">
+                    <div class="row rows align-items-center">
+                        <div class="col-lg-6 col-md-6 columns">
+                            <div class="map"><a href="https://www.google.com/maps/place/Mezelet,+07150+Vallon-Pont-d'Arc,+France/@44.3917459,4.4012484,17z/data=!3m1!4b1!4m5!3m4!1s0x12b502022457b5b9:0xea7fa9dbe8ecd234!8m2!3d44.3917459!4d4.4034371" target="_blank"><img src="images/map.png" alt="" class="d-block"></a> </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 col-md-6 columns">
+                            <h5 class="white-color font-weight-300">Mezelet 4 <br /> 07150 Vallon-Pont-d’Arc <br />
+                                France</h5>
+                            <a href="https://www.tripadvisor.com/Attractions-g676151-Activities-Vallon_Pont_d_Arc_Ardeche_Auvergne_Rhone_Alpes.html" target="_blank" class="btn mt-3">PLACES OF INTEREST</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <a name="facilities"></a>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h4>Facilities</h4>
+                </div>
+
+                <div class="product-sliders position-relative facility-slider-wrap">
+                    <div class="slider-arrow prev d-flex align-items-center justify-content-center"><i
+                            class="far fa-angle-left"></i></div>
+                    <div class="slider-arrow next d-flex align-items-center justify-content-center"><i
+                            class="far fa-angle-right"></i></div>
+                    <div class="row product-slider facility-slider">
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Nursery home</h6>
+                                        <p>leave your kids without worries!</p>
+                                    </div>
+                                </div>
+                                <img src="images/facilities/1.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Pools</h6>
+                                        <p>pools for kids & adults</p>
+                                    </div>
+                                </div>
+                                <img src="images/facilities/2.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Elevator</h6>
+                                        <p>easy access with strollers</p>
+                                    </div>
+                                </div>
+                                <img src="images/facilities/3.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>WiFi</h6>
+                                        <p>free wifi throughout the property</p>
+                                    </div>
+                                </div>
+                                <img src="images/facilities/4.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                        <div class="col product-slide">
+                            <a href="#" class="d-block product-slide-item">
+                                <div class="product-slider-content d-flex align-items-end">
+                                    <div class="slide-item-content flex-grow-1 text-center">
+                                        <h6>Playground</h6>
+                                        <p>a paradise for kids</p>
+                                    </div>
+                                </div>
+                                <img src="images/facilities/5.jpg" alt="" class="d-block">
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <a name="activities"></a>
+
+        <section class="section activities">
+
+            <div class="section-heading text-center">
+                <h4>Activities</h4>
+            </div>
+
+            <div class="section-content-block dark-gray-bg-color">
+                <div class="container">
+
+                    <div class="article-slider-wrap position-relative">
+                        <div class="article-slider-arrow prev"><i class="far fa-angle-left"></i></div>
+                        <div class="article-slider-arrow next"><i class="far fa-angle-right"></i></div>
+                        <div class="article-slider">
+
+                            <div class="article-slide">
+                                <div class="row rows align-items-center">
+                                    <div class="col-lg-7 columns order-lg-2">
+                                        <figure><img src="images/img-1.jpg" alt="" class="d-block"></figure>
+                                    </div>
+                                    <div class="col-lg-5 columns text-center order-lg-1">
+                                        <h6 class="white-color font-weight-500">Children entertainment</h6>
+                                        <p class="white-color">We have a children entertainment programme for when you
+                                            want to do some other activities alone with your partner. We have great
+                                            monitors that will take great care of your children!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="article-slide">
+                                <div class="row rows align-items-center">
+                                    <div class="col-lg-7 columns order-lg-2">
+                                        <figure><img src="images/img-4.jpg" alt="" class="d-block"></figure>
+                                    </div>
+                                    <div class="col-lg-5 columns text-center order-lg-1">
+                                        <h6 class="white-color font-weight-500">Guided hikes</h6>
+                                        <p class="white-color">Enjoy our guided hike tours through the beautiful ardèche!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <a name="restaurant"></a>
+
+        <section class="section articles">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h4>Restaurant</h4>
+                </div>
+
+                <div class="article-group">
+                    <article class="article">
+                        <div class="row no-gutters">
+                            <div class="col-lg-7 col-md-7 column">
+                                <figure class="article-image position-relative"><img src="images/img-2.jpg" alt=""
+                                        class="d-block"></figure>
+                            </div>
+                            <div class="col-lg-5 col-md-5 column text-center">
+                                <div class="article-content-block">
+                                    <h6 class="font-weight-500">fresh ingredients</h6>
+                                    <p>All our ingredients come from local markets and are bought fresh every day!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 column">
+                                <figure class="article-image position-relative"><img src="images/img-3.jpg" alt=""
+                                        class="d-block"></figure>
+                            </div>
+                            <div class="col-lg-5 col-md-5 column text-center">
+                                <div class="article-content-block">
+                                    <h6 class="font-weight-500">weekly updated menu</h6>
+                                    <p>Our menu is updated weekly with seasonal dishes and ingredients that are available that time at the markets!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="button-wrap dark-gray-bg-color text-center">
+                    <a href="#" class="btn btn-lg">WEEKLY MENU</a>
+                </div>
+
+            </div>
+        </section>
+
+        <a name="photos"></a>
+
+        <section class="section articles">
+
+            <div class="section-heading text-center">
+                <h4>Photo’s</h4>
+            </div>
+
+            <div class="photo-gallery">
+                <a href="images/gallery/1.jpg" class="d-block"><img src="images/gallery/1.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/2.jpg" class="d-block"><img src="images/gallery/2.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/3.jpg" class="d-block"><img src="images/gallery/3.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/4.jpg" class="d-block"><img src="images/gallery/4.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/5.jpg" class="d-block"><img src="images/gallery/5.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/6.jpg" class="d-block"><img src="images/gallery/6.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/7.jpg" class="d-block"><img src="images/gallery/7.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/8.jpg" class="d-block"><img src="images/gallery/8.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/9.jpg" class="d-block"><img src="images/gallery/9.jpg" alt="" class="d-block overlay"></a>
+                <a href="images/gallery/10.jpg" class="d-block"><img src="images/gallery/10.jpg" alt="" class="d-block overlay"></a>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer dark-gray-bg-color">
+        <div class="container">
+            <div class="footer-block">
+
+                <div class="footer-logo">
+                    <a href="#">
+                        <p class="d-block" id="footer-logo">Château Vallon-Pont-d'Arc</p>
+                    </a>
+                </div>
+
+                <div class="footer-contacts d-sm-flex justify-content-between">
+
+                    <div class="address mt-3 white-color">
+                        <p>Mezelet 4</p>
+                        <p>07150 Vallon-Pont-d’Arc</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="address mt-3 text-sm-right">
+                        <p><a href="#" class="white-color">+33 5 34 43 62 97</a></p>
+                        <p><a href="#" class="white-color">info@chateauvallonpontdarc.com</a></p>
+                        <p><a href="#" class="white-color">chateauvallonpontdarc.com</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-block row rows align-items-center footer-bottom">
+                <div class="col columns d-flex align-items-center justify-content-center order-md-2">
+                    <div class="social-media-icons d-flex align-items-center justify-content-center">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-tripadvisor"></a>
+                    </div>
+                </div>
+                <p class="col-auto columns order-md-3"><a href="#">sitemap</a> | <a href="#">cookie policy</a> | <a
+                        href="#">privacy</a></p>
+                <p class="col-auto columns copyright order-md-1">&copy; 2019 Noppe Ltd. All rights served</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="js/menu.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>   
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/slick.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/parallax.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

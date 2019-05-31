@@ -1,0 +1,56 @@
+@import url('variables.css');
+
+.sg-title{
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.sg-subtitle{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.cube-container{
+    display: flex;
+}
+
+.color-cubes{
+    padding: 25px;
+    border: 2px solid black;
+    margin: 25px;
+    flex-direction: column;
+}
+
+#color1{
+    background-color: var(--c-highlight);
+}
+
+#color2{
+    background-color: var(--c-bijnazwart);
+    color: white;
+}
+
+#color3{
+    background-color: var(--c-donkergrijs);
+    color: white;
+}
+
+#color4{
+    background-color: var(--c-offwhite);
+}
+
+#color5{
+    background-color: var(--c-white);
+}
+
+.title-padding{
+    padding: 20px;
+}
+
+
+.maxbtnwidth{
+    width: 90px;
+    font-weight: 500;
+    color: var(--c-white);
+    text-align: center;
+}
